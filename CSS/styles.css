@@ -398,7 +398,7 @@ header {
 
 .topic-card .btn:hover {
   background: #fdfdfd;
-  color: #000814;
+  color: #000814; 
 }
 
 /* Responsive Adjustments */
@@ -421,5 +421,112 @@ header {
 
   .topic-card i {
     font-size: 2.2rem;
+  }
+}
+
+/* 🌿 About RootedTech Section */
+.about-rootedtech {
+  background: #fff;
+  color: #000814;
+  padding: 5rem 2rem;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+/* Image */
+.about-image {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  Box-shadow: 0 0 10px rgba(235, 208, 56, 0.938); 
+}
+
+.about-image img:hover {
+  transform: scale(1.03);
+}
+
+/* Content */
+.about-content {
+  flex: 1 1 50%;
+}
+
+.about-content h2 {
+  font-size: 2.3rem;
+  color: #003566;
+  margin-bottom: 0.8rem;
+}
+
+.about-content h3 {
+  font-size: 1.5rem;
+  color: #ffc300;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.about-content p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+  color: #003566;
+}
+
+.about-btn {
+  display: inline-block;
+  background: #ffc300;
+  color: #000814;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.about-btn:hover {
+  background: #003566;
+  color: #fdfdfd;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image,
+  .about-content {
+    flex: 1 1 100%;
+  }
+
+  .about-content h2 {
+    font-size: 2rem;
+  }
+
+  .about-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+
+  .about-btn {
+    padding: 0.7rem 1.3rem;
   }
 }
