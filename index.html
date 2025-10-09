@@ -15,120 +15,192 @@
     <header>
       <!-- Navigation Bar -->
       <nav class="navbar">
-    <div class="logo">RootedTech</div>
-    <div class="menu-toggle" id="menu-toggle">
-      <i class="fas fa-bars"></i>
-    </div>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="#home">Home</a></li>
+        <div class="logo">RootedTech</div>
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
 
-      <li class="dropdown">
-        <a href="#">Learn With Me <i class="fas fa-caret-down"></i></a>
-        <ul class="dropdown-menu">
-          <li><a href="#journey">My Coding Journey</a></li>
-          <li><a href="#guides">Beginner Guides</a></li>
-          <li><a href="#logs">Public Learning Logs</a></li>
-        </ul>
-      </li>
+          <li class="dropdown">
+            <a href="#">Learn With Me <i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#journey">My Coding Journey</a></li>
+              <li><a href="#guides">Beginner Guides</a></li>
+              <li><a href="#logs">Public Learning Logs</a></li>
+            </ul>
+          </li>
 
-      <li class="dropdown">
-        <a href="#">Web Tools & Tech Tips <i class="fas fa-caret-down"></i></a>
-        <ul class="dropdown-menu">
-          <li><a href="#ai">AI Tools</a></li>
-          <li><a href="#productivity">Productivity Hacks</a></li>
-        </ul>
-      </li>
+          <li class="dropdown">
+            <a href="#"
+              >Web Tools & Tech Tips <i class="fas fa-caret-down"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="#ai">AI Tools</a></li>
+              <li><a href="#productivity">Productivity Hacks</a></li>
+            </ul>
+          </li>
 
-      <li class="dropdown">
-        <a href="#">Things to Learn <i class="fas fa-caret-down"></i></a>
-        <ul class="dropdown-menu">
-          <li><a href="#courses">Recommended Courses</a></li>
-          <li><a href="#books">Books & Blogs</a></li>
-          <li><a href="#challenges">Challenges & Experiments</a></li>
+          <li class="dropdown">
+            <a href="#">Things to Learn <i class="fas fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#courses">Recommended Courses</a></li>
+              <li><a href="#books">Books & Blogs</a></li>
+              <li><a href="#challenges">Challenges & Experiments</a></li>
+            </ul>
+          </li>
         </ul>
-      </li>
-    </ul>
-  </nav>
+      </nav>
     </header>
     <main>
-        <!-- Main Content Area -->
-         <section class="latest-section" id="latest">
+      <!-- Main Content Area -->
+      <section class="latest-section" id="latest">
+        <div class="container">
+          <!-- Main Content -->
+          <div class="main-content">
+            <h2>📢 Latest from RootedTech</h2>
+
+            <div class="post-card">
+              <img src="./Images/AI Image.png" alt="AI Tools 2025" />
+              <div class="post-info">
+                <h3>Top 5 AI Tools to Supercharge Your Productivity in 2025</h3>
+                <p class="date">Published: Oct 1, 2025</p>
+                <p>
+                  Discover how the newest AI tools can automate tasks,
+                  streamline workflows, and help you code faster than ever.
+                </p>
+                <a href="#" class="read-more">Read More</a>
+              </div>
+            </div>
+
+            <div class="post-card">
+              <img
+                src="./Images/Web Development Image.png"
+                alt="Web Frameworks"
+              />
+              <div class="post-info">
+                <h3>Best Frontend Frameworks for Beginners (2025 Edition)</h3>
+                <p class="date">Published: Sept 20, 2025</p>
+                <p>
+                  Not sure which framework to learn first? We break down the
+                  pros and cons of React, Vue, and Svelte for beginners.
+                </p>
+                <a href="#" class="read-more">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="sidebar">
+            <h3>📂 Categories</h3>
+            <ul>
+              <li><a href="#">AI Tools</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Productivity</a></li>
+              <li><a href="#">Learning Journey</a></li>
+            </ul>
+
+            <h3>🔥 Popular Posts</h3>
+            <ul class="popular">
+              <li><a href="#">Mastering JavaScript Basics in 7 Days</a></li>
+              <li><a href="#">Why Accessibility Matters in Web Design</a></li>
+              <li><a href="#">Build Your First API with Node.js</a></li>
+            </ul>
+
+            <div class="subscribe-box">
+              <h3>📬 Stay Updated</h3>
+              <p>Join 2,000+ readers and get updates straight to your inbox.</p>
+              <input type="email" placeholder="Enter your email" />
+              <button type="">Subscribe</button>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- 🌱 Featured Topics Section -->
+<section class="featured-topics" id="topics">
   <div class="container">
+    <h2>🌿 Featured Topics</h2>
+    <p class="section-intro">
+      Explore categories that help you grow, from hands-on coding to productivity hacks and AI tools.
+    </p>
 
-    <!-- Main Content -->
-    <div class="main-content">
-      <h2>📢 Latest from RootedTech</h2>
-
-      <div class="post-card">
-        <img src="./Images/AI Image.png" alt="AI Tools 2025">
-        <div class="post-info">
-          <h3>Top 5 AI Tools to Supercharge Your Productivity in 2025</h3>
-          <p class="date">Published: Oct 1, 2025</p>
-          <p>Discover how the newest AI tools can automate tasks, streamline workflows, and help you code faster than ever.</p>
-          <a href="#" class="read-more">Read More</a>
-        </div>
+    <div class="topics-grid">
+      <div class="topic-card">
+        <i class="fas fa-code"></i>
+        <h3>Beginner Guides</h3>
+        <p>Step-by-step articles to help new coders build solid foundations.</p>
+        <a href="#guides" class="btn">Explore</a>
       </div>
 
-      <div class="post-card">
-        <img src="./Images/Web Development Image.png" alt="Web Frameworks">
-        <div class="post-info">
-          <h3>Best Frontend Frameworks for Beginners (2025 Edition)</h3>
-          <p class="date">Published: Sept 20, 2025</p>
-          <p>Not sure which framework to learn first? We break down the pros and cons of React, Vue, and Svelte for beginners.</p>
-          <a href="#" class="read-more">Read More</a>
-        </div>
+      <div class="topic-card">
+        <i class="fas fa-robot"></i>
+        <h3>AI Tools</h3>
+        <p>Discover smart tools and tips to boost your workflow efficiency.</p>
+        <a href="#ai" class="btn">Explore</a>
       </div>
 
+      <div class="topic-card">
+        <i class="fas fa-bolt"></i>
+        <h3>Productivity Hacks</h3>
+        <p>Learn techniques and tools to code smarter, not harder.</p>
+        <a href="#productivity" class="btn">Explore</a>
+      </div>
+
+      <div class="topic-card">
+        <i class="fas fa-book-open"></i>
+        <h3>Recommended Resources</h3>
+        <p>Courses, blogs, and books that inspire your learning journey.</p>
+        <a href="#courses" class="btn">Explore</a>
+      </div>
+      <div class="topic-card">
+        <i class="fas fa-book-open"></i>
+        <h3>Recommended Resources</h3>
+        <p>Courses, blogs, and books that inspire your learning journey.</p>
+        <a href="#courses" class="btn">Explore</a>
+      </div>
+      <div class="topic-card">
+        <i class="fas fa-book-open"></i>
+        <h3>Recommended Resources</h3>
+        <p>Courses, blogs, and books that inspire your learning journey.</p>
+        <a href="#courses" class="btn">Explore</a>
+      </div>
     </div>
-
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <h3>📂 Categories</h3>
-      <ul>
-        <li><a href="#">AI Tools</a></li>
-        <li><a href="#">Web Development</a></li>
-        <li><a href="#">Productivity</a></li>
-        <li><a href="#">Learning Journey</a></li>
-      </ul>
-
-      <h3>🔥 Popular Posts</h3>
-      <ul class="popular">
-        <li><a href="#">Mastering JavaScript Basics in 7 Days</a></li>
-        <li><a href="#">Why Accessibility Matters in Web Design</a></li>
-        <li><a href="#">Build Your First API with Node.js</a></li>
-      </ul>
-
-      <div class="subscribe-box">
-        <h3>📬 Stay Updated</h3>
-        <p>Join 2,000+ readers and get updates straight to your inbox.</p>
-        <input type="email" placeholder="Enter your email" />
-        <button>Subscribe</button>
-      </div>
-    </aside>
-
   </div>
 </section>
 
     </main>
     <footer></footer>
     <script>
-    // Mobile menu toggle
-const menuToggle = document.getElementById('menu-toggle');
-const navLinks = document.getElementById('nav-links');
+      const menuToggle = document.getElementById("menu-toggle");
+      const navLinks = document.getElementById("nav-links");
+      const dropdowns = document.querySelectorAll(".dropdown");
 
-menuToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-});
+      // Toggle mobile menu
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
 
-// Dropdown toggle on mobile
-document.querySelectorAll('.dropdown > a').forEach(link => {
-  link.addEventListener('click', e => {
-    if (window.innerWidth <= 768) {
-      e.preventDefault();
-      link.parentElement.classList.toggle('open');
-    }
-  });
-});
-  </script>
+      // Toggle dropdowns on mobile
+      dropdowns.forEach((dropdown) => {
+        const link = dropdown.querySelector("a");
+
+        link.addEventListener("click", (e) => {
+          // Only trigger toggle behavior on mobile screens
+          if (window.innerWidth <= 768) {
+            e.preventDefault();
+            dropdown.classList.toggle("open");
+          }
+        });
+      });
+
+      // Optional: close menu when clicking outside (nice polish)
+      document.addEventListener("click", (e) => {
+        if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+          navLinks.classList.remove("active");
+          dropdowns.forEach((d) => d.classList.remove("open"));
+        }
+      });
+    </script>
   </body>
 </html>
