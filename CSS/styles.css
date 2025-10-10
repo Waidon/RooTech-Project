@@ -219,6 +219,7 @@ header {
   color: #003566;
   font-size: 1rem;
   line-height: 1.6;
+  font-size: 1.2rem;
 }
 
 .read-more {
@@ -378,7 +379,7 @@ header {
 }
 
 .topic-card p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 1.5rem;
   color: #fdfdfd;
 }
@@ -414,7 +415,7 @@ header {
   }
 
   .topic-card p {
-    font-size: 0.95rem;
+    font-size: 1.2rem;
   }
 
   .topic-card i {
@@ -478,7 +479,7 @@ header {
 }
 
 .about-content p {
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   line-height: 1.8;
   margin-bottom: 1.2rem;
   color: #003566;
@@ -521,7 +522,7 @@ header {
   }
 
   .about-content p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .about-btn {
@@ -686,8 +687,9 @@ font-size: 1.2rem;
 }
 
 .newsletter-form button:hover {
-  background: #ffd60a;
+  background: #000814;
   transform: scale(1.05);
+  color: rgb(255, 255, 255);
 }
 
 .newsletter-image {
@@ -776,8 +778,9 @@ color: #000814;
 }
 
 .contact-form button:hover {
-  background: #002855;
+  background: #ffc300;
   transform: scale(1.05);
+  color:#000814;
 }
 
 /* ⚫ FOOTER */
@@ -796,8 +799,14 @@ color: #000814;
   margin: auto;
 }
 
-.footer h3, .footer h4 {
+.footer h3{
   color: #ffc300;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.footer h4 {
+color: #ffc300;
   margin-bottom: 0.8rem;
 }
 
