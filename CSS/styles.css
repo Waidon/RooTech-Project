@@ -14,6 +14,97 @@ body {
 font-size: 1.2rem;
 }
 
+/* 🌟 HERO SECTION STYLES */
+.hero {
+  height: 100vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("../Images/Hero\ section.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding: 0 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Smooth fade-in animation */
+.hero-content {
+  max-width: 700px;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.hero-content h1 span {
+  color: #ffc300;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #e5e5e5;
+  line-height: 1.6;
+}
+
+.hero-btn {
+  background-color: #ffc300;
+  color: #003566;
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #003566;
+  transform: scale(1.05);
+  color: #ffc300;
+}
+
+/* 🔁 RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .hero {
+    height: 90vh;
+    padding: 2rem 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-btn {
+    padding: 0.8rem 1.6rem;
+  }
+}
+
+/* ✨ Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
 /*Navigation Bar*/
 
 /* Navbar */
@@ -49,7 +140,11 @@ header {
   list-style: none;
   display: flex;
   gap: 2rem;
+ 
+ 
 }
+
+
 
 .nav-links a {
   color: #ffc300; 

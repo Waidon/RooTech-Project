@@ -52,6 +52,17 @@
         </ul>
       </nav>
     </header>
+    <!-- 🌟 HERO SECTION -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Welcome to <span>RootedTech</span></h1>
+    <p>
+      Exploring the world of web development, technology, and sustainability, one story at a time.
+    </p>
+    <a href="#latest" class="hero-btn">Explore Latest Posts</a>
+  </div>
+</section>
+
     <main>
       <!-- Main Content Area -->
       <section class="latest-section" id="latest">
@@ -388,35 +399,37 @@
     </footer>
 
     <script>
-      const menuToggle = document.getElementById("menu-toggle");
-      const navLinks = document.getElementById("nav-links");
-      const dropdowns = document.querySelectorAll(".dropdown");
+  // Toggle entire mobile menu
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
 
-      // Toggle mobile menu
-      menuToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-      });
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
 
-      // Toggle dropdowns on mobile
-      dropdowns.forEach((dropdown) => {
-        const link = dropdown.querySelector("a");
+  // Handle dropdown open/close on mobile
+  const dropdowns = document.querySelectorAll('.dropdown > a');
 
-        link.addEventListener("click", (e) => {
-          // Only trigger toggle behavior on mobile screens
-          if (window.innerWidth <= 768) {
-            e.preventDefault();
-            dropdown.classList.toggle("open");
-          }
-        });
-      });
+  dropdowns.forEach(drop => {
+    drop.addEventListener('click', (e) => {
+      // Prevent link from navigating immediately
+      e.preventDefault();
 
-      // Optional: close menu when clicking outside (nice polish)
-      document.addEventListener("click", (e) => {
-        if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
-          navLinks.classList.remove("active");
-          dropdowns.forEach((d) => d.classList.remove("open"));
+      // Close other open dropdowns for cleaner UX
+      dropdowns.forEach(other => {
+        if (other !== drop) {
+          other.parentElement.classList.remove('open');
         }
       });
-    </script>
+
+      // Toggle current dropdown
+      drop.parentElement.classList.toggle('open');
+    });
+  });
+
+
+
+</script>
+
   </body>
 </html>
